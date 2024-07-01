@@ -1,0 +1,30 @@
+
+<div class="bg-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOMe8OKNZu5vtCIk4vE4Ayd9SKCtdvYzD-Wg&s');
+"></div>
+<div class="col-auto">
+    <a routerLink="/" class="btn btn-link">
+        <i class="bi bi-house-door-fill h1"></i>
+    </a>
+</div>
+<div class="container">
+    <h1 class="my-4">My Bookings</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Module</th>
+
+            </tr>
+        </thead>
+
+        <tbody>
+            
+            <tr *ngFor=" let booking of bookings ">
+                <td> {{ booking.name }} </td>
+                <td> {{ booking.module }} </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>

@@ -1,0 +1,38 @@
+.bg-image {
+    
+    height: 585px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(2px);
+
+}
+
+
+.container{
+
+background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: left;
+}
+
+.table{
+    color: white;
+}
+
+
+.col-auto{
+    float :right;
+    margin-top: -490px;
+    transform: translate(-50%, -50%);
+    z-index: 6;
+    
+}

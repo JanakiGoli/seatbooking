@@ -1,0 +1,48 @@
+
+
+<div class="bg-image" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOMe8OKNZu5vtCIk4vE4Ayd9SKCtdvYzD-Wg&s');
+            "></div>
+
+<div class="bg-color">
+    <h1 class="mt-0">Enter your details</h1>
+    <div class="col-auto">
+        <a routerLink="/" class="btn btn-link">
+            <i class="bi bi-house-door-fill h2"></i>
+        </a>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">EmployeeId</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Enter your employeeid" (input)="onEmployeeIdChange($event)" required="true">
+                <div class="errorMessage" *ngIf="!isValidEmployeeId">EmployeeId not found</div>
+            </div>
+        </div>
+        <div class="col">
+            <label for="exampleDataList" class="form-label">choose Location</label>
+
+            <input type="text" class="form-control" id="exampleDataList" placeholder="Type to search..."
+                list="datalistOptions" (input)="onLocationChange($event)" required>
+            <datalist id="datalistOptions">
+                <option *ngFor="let location of locations" [value]="location">{{location}}</option>
+            </datalist>
+            <div class="errorMessage"
+                *ngIf=" (selectedLocation === '' && inputLocation !==''  && locations.indexOf(inputLocation) === -1)">No
+                search results found</div>
+        </div>
+
+        <div class="col-md-3">
+            <button class="btn btn-primary" type="submit" (click)="onSearchSeats()" [routerLink]="['/bookseat']"
+                [disabled]="!employeeId  || !selectedLocation">Search Seats</button>
+        </div>
+    </div>
+
+    <!-- <a class="oneC_brandName" onClick = "NavigateToHomePageOfApp();" tableIndex="0" style name = "Go to My WorkSpace homepage"> My WorkSpace</a>  -->
+
+    <div *ngIf="isSelectSeatsVisible">
+        <h1>Select seats</h1>
+    </div>
+
+</div>
+

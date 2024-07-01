@@ -1,0 +1,76 @@
+.oneC_brandName {
+    position: absolute;
+    font-size: 18px !important;
+    padding-left: 0rem !important;
+    padding-right: 10px;
+    font-weight: 600;
+    width: 260px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    left: 50px;
+    font-family: CognizantSans-Bold !important;
+    padding-top: 2px;
+    cursor: pointer;
+    line-height: 45px !important;
+
+    }
+
+    .form-check{
+        align-items: center;
+        gap: 25px;
+    }
+
+    .bg-color
+    {
+        background-color: aqua;
+    }
+
+    .bi bi-house-door-fill {
+        right: 80px;
+    }
+
+    .col-auto{
+        float :right;
+        margin-top: -490px;
+        transform: translate(-50%, -50%);
+        z-index: 6;
+        
+    }
+
+    .container-fluid{
+        background-color: black;
+        color: white;
+        padding: 20px;
+        height : 100vh;
+
+        text-align: left;
+    }
+
+        .bg-image {
+    
+            height: 585px;
+            background-size: cover;
+            background-repeat: no-repeat;
+            filter: blur(2px);
+    
+        }
+
+        .bg-text {
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+            color: white;
+            font-weight: bold;
+            position: absolute;
+            border: 3px solid #f1f1f1;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+          }
+
+
+         .form-check-input:hover {background-color: rgb(0, 47, 255);}
